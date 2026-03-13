@@ -1,0 +1,49 @@
+.learning_journey {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 110px;
+}
+.learning_journey_heading {
+  font-size: 2rem;
+  text-align: center;
+}
+.learning_journey_discription {
+  font: 600;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.learning_journey label {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+  .learning_journey_main_card {
+      padding: 20px 100px;
+      border-radius: 8px;
+     display: flex;
+     gap: 10px;
+
+      backdrop-filter: blur(10px); 
+      -webkit-backdrop-filter: blur(10px);
+        
+    }
+@media screen and (max-width: 768px) {
+  .learning_journey {
+    padding: 20px 20px;
+    
+  }
+  .learning_journey_main_card{
+    padding: 20px;
+    gap:20px;
+    flex-direction: column;
+  }
+  
+}
+    /* Optional: Fallback for browsers that don't support backdrop-filter */
+    @supports not (backdrop-filter: blur(10px)) {
+      .glass-card {
+        background: rgba(30, 41, 59, 0.8); /* Darker fallback */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }

@@ -1,0 +1,137 @@
+.footer_container {
+  color: white;
+  text-align: center;
+  padding: 20px;
+    backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #ffffff1f;
+  background: rgba(15, 23, 42, .15) ;
+  backdrop-filter: blur(12px);
+} 
+.footer_container p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.footer_container ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer_container ul li {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.footer_container ul li a {
+  color: white;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+@media screen and (max-width: 480px) {
+  .footer_container ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer_container ul li a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+    
+}
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  color: #94a3b8;
+}
+
+.footer_content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer_text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.footer_links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.footer_links a {
+  color: #6366f1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer_links a:hover {
+  color: #818cf8;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer_container {
+    padding: 30px 16px;
+    margin-top: 40px;
+  }
+
+  .footer_links {
+    gap: 20px;
+  }
+
+  .footer_text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_container {
+    padding: 20px 12px;
+  }
+
+  .footer_links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+  .footer_links a {
+    font-size: 0.9rem;
+  color: #ffffff;
+  } 
+  .footer_connect {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+  .footer_connect a {
+   
+    color: #b2b2b2;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .footer_connect a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
