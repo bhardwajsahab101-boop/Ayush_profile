@@ -5,9 +5,9 @@
   align-items: center;
   gap: 50px;
 }
-.contact_info {
+.contact_info {  
   display: flex;
-  flex-direction: colum ;
+  flex-direction: colum ;  
   gap: 20px;
 }
 .contact_info_card {
