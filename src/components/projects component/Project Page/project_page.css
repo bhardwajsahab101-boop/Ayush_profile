@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.project_page_caintainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: calc(100vh - 50px);
+}
+.project_main_heading {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.project_main_sub_heading {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Project_skills_img {
+  width: 90px;
+  height: auto;
+  margin: 5px;
+}
+.Project_skills_tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.Project_skills_tag_div {
+  display: flex;
+  flex-direction: column;
+}
+.Project_skill_cards_heading {
+  margin: 50px;
+  text-align: center;
+  font-size: 2rem;
+}
+.Project_card_container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  /* gap: 20px */
+}
+.Project_card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  height: 550px;
+  /* margin: 0 auto; */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.Project_page_img {
+  width: 97%;
+  height: auto;
+}
+
+.Project_card_text_content {
+  margin-top: 40px;
+}
+.projectPageButtonDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.projectPageButtonDiv input {
+  width: 200px;
+  font-weight: 700;
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s ease;
+  background: #6366f1;
+  color: white;
+}
+.projectPageButtonDiv input:hover {
+  background: #818cf8;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .Project_card {
+    width: 80%;
+    height: auto;
+    /* margin: 0 auto; */
+  }
+  .Project_page_img {
+    width: 97%;
+    height: auto;
+  }
+  .projectPageButtonDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 30px;
+  }
+  .projectPageButtonDiv .live {
+    width: 97%;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+    transition: all 0.3s ease;
+    background: #6366f1;
+    color: white;
+  }
+
+  .projectPageButtonDiv .github {
+    width: 97%;
+    font-weight: 700;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+    transition: all 0.3s ease;
+    background: #4447ff;
+    color: white;
+  }
+  .Project_card_container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+
+  gap: 30px
+}
+}

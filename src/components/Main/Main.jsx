@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import "./Main.css"
 function Main() {
   return (
@@ -16,9 +17,9 @@ I enjoy creating clean user interfaces and solving real-world problems using Jav
               <div className='main_content_buttons'>
 
 
-        <input type="button" value="Download Resume" className="main_conatiner_download_resume" /> 
-        <input type="button" value="Get in Touch" className="main_container_get_in_touch" />
-   <input type="button" value="View Project" className="main_container_view_project" />
+       <Link to="/resume"><input type="button" value="Download Resume" className="main_conatiner_download_resume" /></Link> 
+        <Link to="/contact"><input type="button" value="Get in Touch" className="main_container_get_in_touch" /></Link>
+   <Link to="projects"><input type="button" value="View Project" className="main_container_view_project" /></Link>
       </div>
 
  
